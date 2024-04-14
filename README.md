@@ -16,7 +16,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000
 ## Using Docker
 
 ```
-docker build -t krzbot-api . && docker run -e ACCESS_TOKEN=MyS3cur3T0k3n -p 5000:5000 krzbot-api
+docker build -t krzbot-api . && docker run -e ACCESS_TOKEN=<insert_token_here> -p 5000:5000 -v [/your/data/folder]:/data krzbot-api
 ```
 
 ## Description
